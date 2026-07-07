@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Kenay — Tecnologia que transforma processos em resultados reais</title>
+  <meta name="description" content="Desenvolvemos sistemas, aplicativos e integrações que automatizam operações, conectam pessoas e impulsionam o crescimento das empresas. Conheça Sendfly, Metrix e Nexus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kenay.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kenay.com.br/">
+  <meta property="og:title" content="Kenay — Tecnologia que transforma processos em resultados reais">
+  <meta property="og:description" content="Sistemas, aplicativos e integrações que automatizam operações e impulsionam o crescimento das empresas.">
+  <meta property="og:image" content="https://kenay.com.br/images/og-image.webp">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Kenay">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kenay — Tecnologia que transforma processos em resultados reais">
+  <meta name="twitter:description" content="Sistemas, aplicativos e integrações que automatizam operações e impulsionam o crescimento das empresas.">
+  <meta name="twitter:image" content="https://kenay.com.br/images/og-image.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#080C18">
+
+  <!-- Preconnect / DNS prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="assets/banner.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kenay",
+    "alternateName": "Kenay Innovative Software Solutions",
+    "url": "https://kenay.com.br",
+    "logo": "https://kenay.com.br/images/logo.webp",
+    "description": "Desenvolvemos sistemas, aplicativos e integrações que automatizam operações, conectam pessoas e impulsionam o crescimento das empresas.",
+    "foundingDate": "2020",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/kenay"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Barra de progresso de scroll -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <a href="/" class="navbar__logo" aria-label="Kenay — página inicial">
+        <img src="assets/logo completo.jpg" alt="Kenay" width="120" height="40" class="navbar__logo-img">
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navegação principal">
+        <a href="#solucoes" class="navbar__link">Soluções</a>
+        <a href="#sobre" class="navbar__link">Sobre</a>
+        <a href="#como-funciona" class="navbar__link">Como Funciona</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contato" class="btn btn--primary btn--sm">Solicitar Demo</a>
+      </div>
+
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação" hidden>
+    <div class="mobile-menu__inner">
+      <button class="mobile-menu__close" id="menuClose" aria-label="Fechar menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <nav aria-label="Menu mobile">
+        <a href="#solucoes" class="mobile-menu__link">Soluções</a>
+        <a href="#sobre" class="mobile-menu__link">Sobre</a>
+        <a href="#como-funciona" class="mobile-menu__link">Como Funciona</a>
+        <a href="#faq" class="mobile-menu__link">FAQ</a>
+        <a href="#contato" class="btn btn--primary mobile-menu__cta">Solicitar Demo</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__badge animate-fade-in" style="--delay: 200ms">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            Inovação em software para gestão empresarial
+          </div>
+
+          <h1 class="hero__title animate-fade-up" id="heroHeading" style="--delay: 350ms">
+            Tecnologia que <span class="text-gradient">transforma</span> processos em resultados reais.
+          </h1>
+
+          <p class="hero__subtitle animate-fade-up" style="--delay: 500ms">
+            Desenvolvemos sistemas, aplicativos e integrações que automatizam operações, conectam pessoas e impulsionam o crescimento das empresas.
+          </p>
+
+          <div class="hero__actions animate-fade-up" style="--delay: 650ms">
+            <a href="#contato" class="btn btn--primary btn--lg btn--glow">
+              Solicitar demonstração
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#solucoes" class="btn btn--ghost">
+              Conhecer soluções
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual animate-fade-left" style="--delay: 500ms" aria-hidden="true">
+          <div class="hero__mockup-wrapper">
+            <div class="hero__mockup-glow"></div>
+            <img
+              src="assets/banner.png"
+              alt="Dashboard Kenay — plataforma de gestão empresarial"
+              class="hero__mockup-img"
+              width="640"
+              height="400"
+              loading="eager"
+            >
+            <div class="hero__float hero__float--1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.01 15.38c-1.23.49-2.57.66-3.89.45-.29-.04-.59-.03-.87.05-.29.09-.55.25-.76.48l-1.31 1.62a15.25 15.25 0 01-6.67-6.67l1.63-1.31c.23-.21.39-.47.48-.76.07-.28.08-.58.04-.87-.2-1.32-.03-2.66.45-3.89A1.5 1.5 0 007.63 2H4.5A1.5 1.5 0 003 3.5C3 14.25 9.75 21 20.5 21a1.5 1.5 0 001.5-1.5v-3.13a1.5 1.5 0 00-2.01-1.41-.01.01-.01.02 0 .02z" fill="currentColor"/>
+              </svg>
+              <span>Notificação enviada</span>
+            </div>
+            <div class="hero__float hero__float--2">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>99,9% uptime</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOCIAL PROOF
+    ============================================================ -->
+    <section class="social-proof" aria-label="Números da Kenay">
+      <div class="container">
+        <dl class="social-proof__grid">
+          <div class="social-proof__item">
+            <dt class="social-proof__label">empresas ativas</dt>
+            <dd class="social-proof__number" data-target="200" data-prefix="+">+200</dd>
+          </div>
+          <div class="social-proof__item">
+            <dt class="social-proof__label">entregas processadas</dt>
+            <dd class="social-proof__number" data-target="1" data-prefix="+" data-suffix="M">+1M</dd>
+          </div>
+          <div class="social-proof__item">
+            <dt class="social-proof__label">disponibilidade garantida</dt>
+            <dd class="social-proof__number" data-target="99" data-suffix=",9%">99,9%</dd>
+          </div>
+          <div class="social-proof__item">
+            <dt class="social-proof__label">atendimento especializado</dt>
+            <dd class="social-proof__number">24/7</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUEM SOMOS
+    ============================================================ -->
+    <section class="about" id="sobre" aria-labelledby="aboutHeading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">Sobre a Kenay</span>
+          <h2 class="section-title" id="aboutHeading">
+            Somos uma empresa de tecnologia focada em resolver problemas reais de gestão.
+          </h2>
+          <p class="section-subtitle">
+            Nascemos para transformar a forma como empresas gerenciam suas operações. Combinamos tecnologia de ponta com profundo conhecimento dos desafios do dia a dia — e construímos soluções que realmente funcionam.
+            <br><br>
+            Nossa plataforma conecta pessoas, automatiza processos e entrega dados que permitem decisões mais rápidas e inteligentes.
+          </p>
+        </div>
+
+        <div class="about__pillars">
+
+          <div class="pillar-card reveal" style="--delay: 0ms">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Foco no cliente</h3>
+            <p class="pillar-card__text">Cada funcionalidade nasce de uma necessidade real do seu negócio.</p>
+          </div>
+
+          <div class="pillar-card reveal" style="--delay: 50ms">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Inovação constante</h3>
+            <p class="pillar-card__text">Tecnologia que evolui continuamente junto com o seu negócio.</p>
+          </div>
+
+          <div class="pillar-card reveal" style="--delay: 100ms">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Confiança</h3>
+            <p class="pillar-card__text">Segurança e estabilidade para operações críticas do seu negócio.</p>
+          </div>
+
+          <div class="pillar-card reveal" style="--delay: 150ms">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                <polyline points="17 6 23 6 23 12"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Crescimento</h3>
+            <p class="pillar-card__text">Escalamos junto com você, sem perda de performance ou qualidade.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOLUÇÕES
+    ============================================================ -->
+    <section class="solutions" id="solucoes" aria-labelledby="solutionsHeading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">Nossas Soluções</span>
+          <h2 class="section-title" id="solutionsHeading">
+            Uma plataforma completa para sua operação.
+          </h2>
+          <p class="section-subtitle">
+            Três produtos integrados, desenvolvidos para resolver os desafios mais críticos da gestão empresarial.
+          </p>
+        </div>
+
+        <div class="solutions__grid">
+
+          <!-- Sendfly -->
+          <article class="solution-card solution-card--sendfly reveal" style="--delay: 0ms" aria-labelledby="sendfly-title">
+            <div class="solution-card__accent" aria-hidden="true"></div>
+            <div class="solution-card__header">
+              <img src="assets/logo_sendfly.png" alt="Sendfly" class="solution-card__logo" width="48" height="48" loading="lazy">
+              <span class="badge badge--sendfly">Gestão de Entregas</span>
+            </div>
+            <h3 class="solution-card__title" id="sendfly-title">Sendfly</h3>
+            <p class="solution-card__desc">
+              Controle total sobre cada encomenda. Do recebimento à notificação, cada etapa é registrada, rastreada e comunicada automaticamente.
+            </p>
+            <div class="solution-card__divider" aria-hidden="true"></div>
+            <ul class="solution-card__benefits" aria-label="Benefícios do Sendfly">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Notificações automáticas por WhatsApp
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Registro com foto e assinatura digital
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Rastreamento em tempo real
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Relatórios completos de movimentação
+              </li>
+            </ul>
+            <a href="#contato" class="solution-card__cta">
+              Conhecer o Sendfly
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Metrix -->
+          <article class="solution-card solution-card--metrix reveal" style="--delay: 100ms" aria-labelledby="metrix-title">
+            <div class="solution-card__accent" aria-hidden="true"></div>
+            <div class="solution-card__header">
+              <div class="solution-card__icon solution-card__icon--metrix" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <span class="badge badge--metrix">Leitura de Consumo</span>
+            </div>
+            <h3 class="solution-card__title" id="metrix-title">Metrix</h3>
+            <p class="solution-card__desc">
+              Precisão na leitura de água, gás e energia. Elimina erros humanos e gera cobranças justas e transparentes para cada unidade.
+            </p>
+            <div class="solution-card__divider" aria-hidden="true"></div>
+            <ul class="solution-card__benefits" aria-label="Benefícios do Metrix">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Leitura digital com histórico completo
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Rateio automático por unidade
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Alertas de consumo anormal
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Integração com sistemas de cobrança
+              </li>
+            </ul>
+            <a href="#contato" class="solution-card__cta">
+              Conhecer o Metrix
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Nexus -->
+          <article class="solution-card solution-card--nexus solution-card--wide reveal" style="--delay: 200ms" aria-labelledby="nexus-title">
+            <div class="solution-card__accent" aria-hidden="true"></div>
+            <div class="solution-card__header">
+              <div class="solution-card__icon solution-card__icon--nexus" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7" rx="1"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1"/>
+                  <rect x="14" y="14" width="7" height="7" rx="1"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1"/>
+                </svg>
+              </div>
+              <span class="badge badge--nexus">Backoffice Administrativo</span>
+            </div>
+            <h3 class="solution-card__title" id="nexus-title">Nexus</h3>
+            <p class="solution-card__desc">
+              O backoffice que organiza toda a sua operação. Financeiro, comunicados, documentos e relatórios — tudo em um só lugar, acessível de qualquer dispositivo.
+            </p>
+            <div class="solution-card__divider" aria-hidden="true"></div>
+            <ul class="solution-card__benefits solution-card__benefits--grid" aria-label="Benefícios do Nexus">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Gestão financeira integrada
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Comunicados e assembleias digitais
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Repositório de documentos
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Dashboard com indicadores em tempo real
+              </li>
+            </ul>
+            <a href="#contato" class="solution-card__cta">
+              Conhecer o Nexus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIFERENCIAIS
+    ============================================================ -->
+    <section class="features" id="diferenciais" aria-labelledby="featuresHeading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label section-label--light">Por que a Kenay</span>
+          <h2 class="section-title section-title--light" id="featuresHeading">
+            Tecnologia construída para quem não pode parar.
+          </h2>
+          <p class="section-subtitle section-subtitle--light">
+            Infraestrutura robusta, integrações nativas e suporte dedicado — tudo para garantir que sua operação funcione sem interrupções.
+          </p>
+        </div>
+
+        <div class="features__grid">
+
+          <div class="feature-card reveal" style="--delay: 0ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Plataforma Cloud</h3>
+            <p class="feature-card__text">Acesse de qualquer lugar, sem instalações ou servidores locais.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 50ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">API REST</h3>
+            <p class="feature-card__text">Integre com qualquer sistema que sua empresa já utiliza.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 100ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.01 15.38c-1.23.49-2.57.66-3.89.45-.29-.04-.59-.03-.87.05-.29.09-.55.25-.76.48l-1.31 1.62a15.25 15.25 0 01-6.67-6.67l1.63-1.31c.23-.21.39-.47.48-.76.07-.28.08-.58.04-.87-.2-1.32-.03-2.66.45-3.89A1.5 1.5 0 007.63 2H4.5A1.5 1.5 0 003 3.5C3 14.25 9.75 21 20.5 21a1.5 1.5 0 001.5-1.5v-3.13a1.5 1.5 0 00-2.01-1.41z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">WhatsApp nativo</h3>
+            <p class="feature-card__text">Notificações e comunicação onde seus clientes já estão.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 150ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Segurança enterprise</h3>
+            <p class="feature-card__text">Dados criptografados, backups automáticos e conformidade total.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 200ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                <polyline points="17 6 23 6 23 12"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Escalabilidade</h3>
+            <p class="feature-card__text">Cresce com o seu negócio sem perda de performance.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 250ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"/>
+                <polyline points="1 20 1 14 7 14"/>
+                <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Atualizações constantes</h3>
+            <p class="feature-card__text">Melhorias contínuas sem interrupção de serviço.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 300ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Implantação rápida</h3>
+            <p class="feature-card__text">Em funcionamento em dias, não meses.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 350ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Suporte especializado</h3>
+            <p class="feature-card__text">Time dedicado que conhece profundamente o seu negócio.</p>
+          </div>
+
+          <div class="feature-card reveal" style="--delay: 400ms">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Multi-dispositivo</h3>
+            <p class="feature-card__text">Web, mobile e tablet com experiência consistente.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMO FUNCIONA
+    ============================================================ -->
+    <section class="how-it-works" id="como-funciona" aria-labelledby="howHeading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">O processo</span>
+          <h2 class="section-title" id="howHeading">
+            Do primeiro contato ao sucesso da operação.
+          </h2>
+          <p class="section-subtitle">
+            Um processo claro, rápido e sem surpresas — do início ao suporte contínuo.
+          </p>
+        </div>
+
+        <ol class="timeline" aria-label="Etapas do processo Kenay">
+
+          <li class="timeline__step reveal" style="--delay: 0ms">
+            <div class="timeline__number" aria-hidden="true">1</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Contato</h3>
+              <p class="timeline__text">Você fala com um especialista que entende o seu negócio e suas necessidades.</p>
+            </div>
+          </li>
+
+          <li class="timeline__step reveal" style="--delay: 100ms">
+            <div class="timeline__number" aria-hidden="true">2</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Demonstração</h3>
+              <p class="timeline__text">Mostramos a plataforma funcionando com casos reais do seu segmento.</p>
+            </div>
+          </li>
+
+          <li class="timeline__step reveal" style="--delay: 200ms">
+            <div class="timeline__number" aria-hidden="true">3</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Implantação</h3>
+              <p class="timeline__text">Configuramos tudo de acordo com o perfil e a operação da sua empresa.</p>
+            </div>
+          </li>
+
+          <li class="timeline__step reveal" style="--delay: 300ms">
+            <div class="timeline__number" aria-hidden="true">4</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Treinamento</h3>
+              <p class="timeline__text">Capacitamos sua equipe para extrair o máximo de cada solução.</p>
+            </div>
+          </li>
+
+          <li class="timeline__step reveal" style="--delay: 400ms">
+            <div class="timeline__number" aria-hidden="true">5</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Suporte contínuo</h3>
+              <p class="timeline__text">Acompanhamos sua operação e evoluímos junto com o seu negócio.</p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DEPOIMENTOS
+    ============================================================ -->
+    <section class="testimonials" id="depoimentos" aria-labelledby="testimonialsHeading">
+      <div class="container">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">Quem usa, aprova</span>
+          <h2 class="section-title" id="testimonialsHeading">
+            Empresas que transformaram sua operação com a Kenay.
+          </h2>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial-card reveal" style="--delay: 0ms">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__text">
+              "A Kenay mudou completamente a forma como gerenciamos nossas operações. O que levava horas agora é feito em minutos."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">C</div>
+              <div>
+                <cite class="testimonial-card__name">Nome do Cliente</cite>
+                <span class="testimonial-card__role">Cargo · Empresa</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal" style="--delay: 100ms">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__text">
+              "A implantação foi surpreendentemente rápida e o suporte é excepcional. Recomendo sem hesitar para qualquer empresa."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">A</div>
+              <div>
+                <cite class="testimonial-card__name">Nome do Cliente</cite>
+                <span class="testimonial-card__role">Cargo · Empresa</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal" style="--delay: 200ms">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__text">
+              "Com o Sendfly, eliminamos completamente as reclamações sobre encomendas. Zero conflitos, total transparência."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">R</div>
+              <div>
+                <cite class="testimonial-card__name">Nome do Cliente</cite>
+                <span class="testimonial-card__role">Cargo · Empresa</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section class="faq" id="faq" aria-labelledby="faqHeading">
+      <div class="container container--narrow">
+
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">Dúvidas frequentes</span>
+          <h2 class="section-title" id="faqHeading">
+            Respondemos as perguntas mais comuns.
+          </h2>
+        </div>
+
+        <div class="faq__list reveal">
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-1">
+              Os sistemas funcionam integrados entre si?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-1" role="region" hidden>
+              <p>Sim. Sendfly, Metrix e Nexus são parte da plataforma Kenay e se integram nativamente, compartilhando dados e notificações em tempo real.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-2">
+              Quanto tempo leva a implantação?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-2" role="region" hidden>
+              <p>Em média entre 3 e 7 dias úteis, dependendo do porte da operação e das integrações necessárias. Nosso time acompanha todo o processo.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-3">
+              Preciso instalar algum software?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-3" role="region" hidden>
+              <p>Não. Nossa plataforma é 100% em nuvem. Basta um navegador moderno ou o aplicativo móvel disponível para iOS e Android.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-4">
+              Há suporte técnico disponível?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-4" role="region" hidden>
+              <p>Sim. Oferecemos suporte especializado em horário comercial com canais de atendimento via WhatsApp e e-mail. Nosso time conhece profundamente os produtos e o seu contexto.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-5">
+              É possível integrar com sistemas que já uso?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-5" role="region" hidden>
+              <p>Sim. Disponibilizamos API REST completa e documentada para integração com ERPs, sistemas de cobrança e outras plataformas que sua empresa já utiliza.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-6">
+              Como funciona a segurança dos dados?
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq__answer" id="faq-6" role="region" hidden>
+              <p>Utilizamos criptografia em trânsito e em repouso, backups automáticos diários e infraestrutura com certificação de segurança. Seus dados estão sempre protegidos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+    <section class="cta-final" id="contato" aria-labelledby="ctaHeading">
+      <div class="cta-final__bg" aria-hidden="true">
+        <div class="cta-final__glow"></div>
+      </div>
+      <div class="container">
+        <div class="cta-final__inner reveal">
+          <h2 class="cta-final__title" id="ctaHeading">
+            Pronto para transformar sua operação?
+          </h2>
+          <p class="cta-final__subtitle">
+            Fale com um especialista e veja como a Kenay pode automatizar seus processos e gerar resultados reais para o seu negócio.
+          </p>
+          <div class="cta-final__actions">
+            <a href="mailto:contato@kenay.com.br" class="btn btn--primary btn--lg btn--glow">
+              Solicitar demonstração gratuita
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5511999999999" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Falar pelo WhatsApp
+            </a>
+          </div>
+          <p class="cta-final__trust">
+            <span>✓ Sem compromisso</span>
+            <span>✓ Implantação em dias</span>
+            <span>✓ Suporte especializado</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="/" aria-label="Kenay — página inicial">
+            <img src="assets/logo completo.jpg" alt="Kenay" width="110" height="36" loading="lazy" class="footer__logo">
+          </a>
+          <p class="footer__tagline">Innovative Software Solutions</p>
+          <div class="footer__social" aria-label="Redes sociais">
+            <a href="https://www.linkedin.com/company/kenay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da Kenay" class="footer__social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Soluções</h3>
+          <nav aria-label="Links de soluções">
+            <a href="#solucoes" class="footer__link">Sendfly</a>
+            <a href="#solucoes" class="footer__link">Metrix</a>
+            <a href="#solucoes" class="footer__link">Nexus</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Empresa</h3>
+          <nav aria-label="Links da empresa">
+            <a href="#sobre" class="footer__link">Sobre nós</a>
+            <a href="#como-funciona" class="footer__link">Como funciona</a>
+            <a href="#faq" class="footer__link">FAQ</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contato</h3>
+          <nav aria-label="Links de contato">
+            <a href="mailto:contato@kenay.com.br" class="footer__link">contato@kenay.com.br</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="footer__link">WhatsApp</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Kenay. Todos os direitos reservados.</p>
+        <nav class="footer__legal" aria-label="Links legais">
+          <a href="/privacidade" class="footer__legal-link">Política de Privacidade</a>
+          <a href="/termos" class="footer__legal-link">Termos de Uso</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
