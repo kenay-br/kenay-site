@@ -1640,7 +1640,18 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
+.footer__legal-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
 .footer__copy {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,.3);
+}
+
+.footer__company {
   font-size: var(--text-xs);
   color: rgba(255,255,255,.3);
 }
